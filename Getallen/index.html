@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html lang="nl">
+ <head>
+ <meta charset="UTF-8">
+
+ <title>Interactieve HTML</title>
+<script>
+function checkForm(){
+let getal = document.getElementById("getal")
+.value;
+ if(getal < 0 || getal >=50){
+ alert("Het ingevulde getal is onjuist...");
+ }else{
+ alert("Het ingevulde getal is juist...");
+ }
+}
+ </script>
+ </head>
+
+ <body>
+ <h1>Oefenen met JavaScript</h1>
+
+ Vul een getal tussen 0 en 50 in:
+ <br /><br />
+<label for="getal">Getal:</label><br>
+<input type="text" id="getal" name="getal"><br>
+<br />
+ <input type="button" value="Controleer getal"
+ onclick="checkForm()" />
+
+ </body>
+ </html>
